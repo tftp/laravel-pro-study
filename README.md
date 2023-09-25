@@ -1,4 +1,6 @@
-## About Laravel
+# Telegram Manager
+
+## Немного о проекте
 
 Исследовательский проект работы Laravel фреймворка.
 Для установки использовались шаги [разворачивания приложения с использованием sail](https://laravel.com/docs/10.x#laravel-and-docker)
