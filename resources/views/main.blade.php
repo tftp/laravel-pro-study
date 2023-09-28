@@ -14,17 +14,21 @@
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     @vite('resources/js/app.js')
 </head>
 
 <body>
-    @include('layout.nav')
-
+    <div class="container">
+        @include('layouts.header')
+        @include('layouts.nav')
+    </div>
     <main role="main" class="container">
         <div class="row">
 
@@ -32,6 +36,6 @@
         </div>
     </main>
 
-    @include('layout.footer')
+    @include('layouts.footer')
 </body>
 </html>
